@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="google" content="notranslate">
+    <title>Project: Fix my code | Holberton Rennes, France Intranet</title>
+      <link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" media="all" href="/assets/application-e632a8cb492815f90412258ff39dd51d2cace2c4de8c5926c20e660d6e9bd853.css" />
+      <script src="https://www.gstatic.com/charts/loader.js"></script>
+      <meta name="action-cable-url" content="/cable" />
+      <script src="/assets/application-f3ffb9fe613b9d201e0e2ec8e63024268ba6e2abde9a7500c36800e739c9595c.js"></script>
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+      <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="E23UqLMPXi3epwfUEs8GaDhb0l_9qQ9rH7j1FTVlyPrG1ks1Vgj-pCnlqtJ-gp42iYHyVjGDKNJfOR9Z3mjFrA" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Store user timezone -->
+      <script>
+        Cookies.set('timezone', (new Date()).getTimezoneOffset() / -60.0);
+      </script>
+      <!-- ChatBot -->
+      <!-- intro.js for interactive onboarding -->
+        <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+        <link rel="stylesheet" media="screen" href="https://unpkg.com/intro.js/minified/introjs.min.css" />
+      <!-- React -->
+      <script src="/packs/js/application-77628fd8c7309f6d4c21.js"></script>
+      <link rel="stylesheet" media="screen" href="/packs/css/application-87456da7.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="
+    signed_in
+    env_production
+
+    "
+    translate="no"
+    class="notranslate"
+    data-theme-suffix=""
+    data-checker-special-theme="">
+      <input type="hidden" id="hbtn-slack-url" value="https://holberton-school-org.slack.com">
+      <nav class="navbar navbar-default navbar-fixed-top topbar visible-xs">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="/">
+      <div class="logo"></div>
+</a>  </div>
+
+  <div class="collapse navbar-collapse navigation" id="navbar-mobile">
+    <ul class="nav navbar-nav">
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Help"><a target="_blank" href="https://students-support.hbtn.io/hc"><div class="icon "><i aria-hidden="true" class="fa fa-info-circle "></i></div><div class="visible-xs">Help</div></a></li>
+
+
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-current-projects-item" title="Projects"><a href="/projects/current"><div class="icon "><i aria-hidden="true" class="fa fa-code-fork "></i></div><div class="visible-xs">Projects</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="My reports"><a href="/users/my_reports"><div class="icon "><i aria-hidden="true" class="fa fa-sticky-note-o "></i></div><div class="visible-xs">My reports</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="QA Reviews I can make"><a href="/corrections/to_review"><div class="icon "><i aria-hidden="true" class="fa fa-check "></i></div><div class="visible-xs">QA Reviews I can make</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Mock interviews"><a href="/dashboards/my_current_reefineries"><div class="icon "><i aria-hidden="true" class="fa fa-commenting-o "></i></div><div class="visible-xs">Mock interviews</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Evaluation quizzes"><a href="/dashboards/my_current_evaluation_quizzes"><div class="icon "><i aria-hidden="true" class="fa fa-question "></i></div><div class="visible-xs">Evaluation quizzes</div></a></li>
+
+    <hr title="My resources">
+
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-concepts-item" title="Concepts"><a href="/concepts"><div class="icon "><i aria-hidden="true" class="fa fa-file-text "></i></div><div class="visible-xs">Concepts</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Servers"><a href="/servers"><div class="icon "><i aria-hidden="true" class="fa fa-server "></i></div><div class="visible-xs">Servers</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-dashboards-my-containers" title="Sandboxes"><a href="/user_sandboxes"><div class="icon "><i aria-hidden="true" class="fa fa-terminal "></i></div><div class="visible-xs">Sandboxes</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Tools"><a href="/dashboards/my_tools"><div class="icon "><i aria-hidden="true" class="fa fa-wrench "></i></div><div class="visible-xs">Tools</div></a></li>
+
+      <hr title="My campus">
+
+
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Peers"><a href="/users/peers"><div class="icon "><i aria-hidden="true" class="fa fa-users "></i></div><div class="visible-xs">Peers</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Captain&#39;s Logs"><a href="/dashboards/my_captain_log"><div class="icon "><i aria-hidden="true" class="fa fa-book "></i></div><div class="visible-xs">Captain&#39;s Logs</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Officers"><a href="/dashboards/my_officers"><div class="icon "><i aria-hidden="true" class="fa fa-building "></i></div><div class="visible-xs">Officers</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Speakers of the Day"><a href="/dashboards/my_speakers_of_the_day"><div class="icon "><i aria-hidden="true" class="fa fa-microphone "></i></div><div class="visible-xs">Speakers of the Day</div></a></li>
+
+
+<hr class="visible-xs">
+
+<li>
+    <div
+      data-container="body"
+      data-placement="right"
+      data-toggle="tooltip"
+      title="Slack">
+      <a target="_blank" href="https://holberton-school-org.slack.com">
+        <div class="image slack">
+          <div class="inner"></div>
+        </div>
+        <div class="visible-xs">Slack</div>
+</a>    </div>
+
+    <div
+      data-container="body"
+      data-placement="right"
+      data-toggle="modal"
+      data-target="#search-modal"
+      title="Search">
+      <a href="#">
+          <div class="icon" data-toggle="tooltip" data-placement="right" data-container="body" title="Search">
+            <i aria-hidden="true" class="fa fa-search "></i>
+          </div>
+        <div class="visible-xs">Search</div>
+</a>    </div>
+
+  <div
+    data-container="body"
+    data-placement="right"
+    data-toggle="tooltip"
+    title="My Profile">
+    <a href="/users/my_profile">
+        <div class="image ">
+          <div class="inner" style="background-image: url('https://s3.eu-west-3.amazonaws.com/hbtn.intranet/users/photos/000/009/546/thumb/Capture_d%E2%80%99%C3%A9cran_2024-06-03_111954.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250113%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20250113T131415Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7828f32fb9a67b351bd5722133ea75511df9ac8705191a6f1eaeb4d007707a40')"></div>
+        </div>
+
+      <div class="visible-xs">My Profile</div>
+</a>  </div>
+</li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      <div class="hidden-xs navigation sidebar">
+  <a class="logo-container" href="/">
+    <div class="logo"></div>
+</a>
+  <ul>
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Help"><a target="_blank" href="https://students-support.hbtn.io/hc"><div class="icon "><i aria-hidden="true" class="fa fa-info-circle "></i></div><div class="visible-xs">Help</div></a></li>
+
+
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-current-projects-item" title="Projects"><a href="/projects/current"><div class="icon "><i aria-hidden="true" class="fa fa-code-fork "></i></div><div class="visible-xs">Projects</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="My reports"><a href="/users/my_reports"><div class="icon "><i aria-hidden="true" class="fa fa-sticky-note-o "></i></div><div class="visible-xs">My reports</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="QA Reviews I can make"><a href="/corrections/to_review"><div class="icon "><i aria-hidden="true" class="fa fa-check "></i></div><div class="visible-xs">QA Reviews I can make</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Mock interviews"><a href="/dashboards/my_current_reefineries"><div class="icon "><i aria-hidden="true" class="fa fa-commenting-o "></i></div><div class="visible-xs">Mock interviews</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Evaluation quizzes"><a href="/dashboards/my_current_evaluation_quizzes"><div class="icon "><i aria-hidden="true" class="fa fa-question "></i></div><div class="visible-xs">Evaluation quizzes</div></a></li>
+
+    <hr title="My resources">
+
+
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-concepts-item" title="Concepts"><a href="/concepts"><div class="icon "><i aria-hidden="true" class="fa fa-file-text "></i></div><div class="visible-xs">Concepts</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Servers"><a href="/servers"><div class="icon "><i aria-hidden="true" class="fa fa-server "></i></div><div class="visible-xs">Servers</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" id="sidebar-dashboards-my-containers" title="Sandboxes"><a href="/user_sandboxes"><div class="icon "><i aria-hidden="true" class="fa fa-terminal "></i></div><div class="visible-xs">Sandboxes</div></a></li>
+    <li data-container="body" data-placement="right" data-toggle="tooltip" title="Tools"><a href="/dashboards/my_tools"><div class="icon "><i aria-hidden="true" class="fa fa-wrench "></i></div><div class="visible-xs">Tools</div></a></li>
+
+      <hr title="My campus">
+
+
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Peers"><a href="/users/peers"><div class="icon "><i aria-hidden="true" class="fa fa-users "></i></div><div class="visible-xs">Peers</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Captain&#39;s Logs"><a href="/dashboards/my_captain_log"><div class="icon "><i aria-hidden="true" class="fa fa-book "></i></div><div class="visible-xs">Captain&#39;s Logs</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Officers"><a href="/dashboards/my_officers"><div class="icon "><i aria-hidden="true" class="fa fa-building "></i></div><div class="visible-xs">Officers</div></a></li>
+      <li data-container="body" data-placement="right" data-toggle="tooltip" title="Speakers of the Day"><a href="/dashboards/my_speakers_of_the_day"><div class="icon "><i aria-hidden="true" class="fa fa-microphone "></i></div><div class="visible-xs">Speakers of the Day</div></a></li>
+
+
+<hr class="visible-xs">
+
+<li>
+    <div
+      data-container="body"
+      data-placement="right"
+      data-toggle="tooltip"
+      title="Slack">
+      <a target="_blank" href="https://holberton-school-org.slack.com">
+        <div class="image slack">
+          <div class="inner"></div>
+        </div>
+        <div class="visible-xs">Slack</div>
+</a>    </div>
+
+    <div
+      data-container="body"
+      data-placement="right"
+      data-toggle="modal"
+      data-target="#search-modal"
+      title="Search">
+      <a href="#">
+          <div class="icon" data-toggle="tooltip" data-placement="right" data-container="body" title="Search">
+            <i aria-hidden="true" class="fa fa-search "></i>
+          </div>
+        <div class="visible-xs">Search</div>
+</a>    </div>
+
+  <div
+    data-container="body"
+    data-placement="right"
+    data-toggle="tooltip"
+    title="My Profile">
+    <a href="/users/my_profile">
+        <div class="image ">
+          <div class="inner" style="background-image: url('https://s3.eu-west-3.amazonaws.com/hbtn.intranet/users/photos/000/009/546/thumb/Capture_d%E2%80%99%C3%A9cran_2024-06-03_111954.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250113%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20250113T131415Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7828f32fb9a67b351bd5722133ea75511df9ac8705191a6f1eaeb4d007707a40')"></div>
+        </div>
+
+      <div class="visible-xs">My Profile</div>
+</a>  </div>
+</li>
+
+
+  </ul>
+</div>
+
+    <main>
+      <div id="layout-bars">
+        <div class="px-5 py-3" id="student-switch-curriculum">
+  <div class="dropdown d-flex flex-column gap-1">
+    <span class="fs-small text-muted">Curriculum</span>
+    <div aria-haspopup="true" aria-expanded="false" class="align-items-center d-flex gap-3" data-toggle="dropdown" id="student-switch-curriculum-dropdown" role="button">
+      <div class="d-flex flex-column" style="line-height: 16px">
+        <span class="fs-4 fw-600">
+            [C#24]
+          Foundations v2 - Part 3
+        </span>
+        <span class="fs-small text-muted">
+          Average: <span class="fw-500">99.76%</span>
+        </span>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <span style="margin-bottom: -4px">
+          <i aria-hidden="true" class="fa fa-angle-up  fa-fw"></i>
+        </span>
+        <span style="margin-top: -4px">
+          <i aria-hidden="true" class="fa fa-angle-down  fa-fw"></i>
+        </span>
+      </div>
+    </div>
+    <ul aria-labelledby="student-switch-curriculum-dropdown" class="dropdown-menu fs-5">
+        <li>
+          <a class="" href="/curriculums/327/observe/37959">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  Foundations v2 - Part 1
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">97.39%
+                          </span>
+                </span>
+              </div>
+            </div>
+</a>        </li>
+        <li>
+          <a class="" href="/curriculums/392/observe/45551">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  HBnB v2
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">95.22%
+                          </span>
+                </span>
+              </div>
+            </div>
+</a>        </li>
+        <li>
+          <a class="" href="/curriculums/394/observe/45832">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  Foundations v2 - Part 2
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">99.21%
+                          </span>
+                </span>
+              </div>
+            </div>
+</a>        </li>
+        <li>
+          <a class="" href="/curriculums/423/observe/47660">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  RNCP 5 - Parcours de préparation
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">100.0%
+                          </span>
+                </span>
+              </div>
+            </div>
+</a>        </li>
+        <li>
+          <a class="" href="/curriculums/382/observe/52039">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  Foundations v2 - Part 3
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">99.76%
+                          </span>
+                </span>
+              </div>
+                <span class="fw-600 text-info" style="margin-left: 42px">
+                  <i aria-hidden="true" class="fa fa-check "></i>
+                </span>
+            </div>
+</a>        </li>
+        <li>
+          <a class="" href="/curriculums/427/observe/52583">
+            <div class="align-items-center d-flex py-2">
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-500">
+                    [C#24]
+                  Portfolio Project v2
+                </span>
+                <span class="text-muted">
+                  Average: <span class="fw-500">100.0%
+                          </span>
+                </span>
+              </div>
+            </div>
+</a>        </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+      </div>
+      <article class="">
+
+<div class="project row container-max">
+
+    <div class="sm-gap">
+    <div data-react-class="projects/ProjectHeader" data-react-props="{&quot;metadata&quot;:{&quot;level&quot;:&quot;Amateur&quot;,&quot;author&quot;:&quot;Guillaume&quot;,&quot;weight&quot;:1,&quot;migrated_to_sasheck&quot;:true,&quot;task_level_review_type&quot;:&quot;Your score will be updated as you progress.&quot;,&quot;correction&quot;:{&quot;released&quot;:false,&quot;requires_manual_correction&quot;:false}},&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2217,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/001_color-bb105595db22648e67fe1bf13ccc170165764f9c481034cdfd49dbb416af34af.png&quot;,&quot;name&quot;:&quot;Fix my code&quot;,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;slackLink&quot;:null,&quot;tags&quot;:[],&quot;videoRoomLink&quot;:null}" data-react-cache-id="projects/ProjectHeader-0"></div>
+  </div>
+
+
+  <div id="project_id" class="d-none" data-project-id="2217"></div>
+
+
+
+    <div>
+      <ul class="nav nav-pills nav-justified" role="tablist">
+          <li class="active"><a href="#description" role="tab" data-toggle="tab">Description</a></li>
+      </ul>
+      <div class="tab-content mt-4">
+        <div role="tabpanel" class="tab-pane active" id="description">
+          <div class="panel panel-default position-relative" id="project-description">
+  <a id="btn-scroll-to-tasks" href="#" class="btn btn-primary fixed-button hidden-xs">
+    Go to tasks <i class="ml-1 fa fa-arrow-down"></i>
+  </a>
+  <div class="panel-body text-justify">
+    <h2>Background Context</h2>
+
+<p><code>Fix my code</code> is a new type of project, where we&rsquo;ll jump into an existing code base and fix it!</p>
+
+<p>Sometimes you will know the language, sometimes not.</p>
+
+<p>Please download the repository <a href="/rltoken/vj9owR_ZFWviI1EWWp_wKg" title="Fix_My_Code_Challenge" target="_blank">Fix_My_Code_Challenge</a> and use it as initial files for all solutions.</p>
+
+<p>You should not recode everything, just fix it!</p>
+
+<p><strong>This project is NOT mandatory</strong> at all. It is 100% optional. Doing any part of this project will add a project grade of over 100% to your average. Your score won&rsquo;t get hurt if you don&rsquo;t do it, but if your current average is greater than your score on this project, your average might go down. Have fun!</p>
+
+<h2>Requirements</h2>
+
+<h3>General</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be compiled on Ubuntu 20.04 LTS</li>
+<li>All your files should end with a new line</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project is mandatory</li>
+</ul>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+        <h2 id="task-container" class="gap">Tasks</h2>
+
+  <div class="col-sm-12 col-md-12 col-lg-8 xol-xl-9">
+      <div data-role="task20594" data-position="1" id="task-num-0">
+        <div class="panel panel-default task-card " id="task-20594">
+  <span id="user_id" data-id="9546"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      0. FizzBuzz
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="9546"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Please take a look at my implementation of FizzBuzz in Python: <a href="https://github.com/hs-hq/0x00-Fix_My_Code_Challenge/blob/main/0-fizzbuzz.py" title="source code" target="_blank">source code</a></p>
+
+<p>Something is going wrong&hellip;.</p>
+
+<pre><code>$ ./0-fizzbuzz.py 50
+1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 Fizz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 Fizz 46 47 Fizz 49 Buzz
+$
+</code></pre>
+
+<p><code>15</code> should print <code>FizzBuzz</code> not <code>Fizz</code></p>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-Fix_My_Code_Challenge</code></li>
+            <li>Directory: <code>challenge</code></li>
+            <li>File: <code>0-fizzbuzz.py</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="20594" data-batch-id="843" data-toggle="modal" data-target="#task-20594-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-20594-users-done-modal" data-task-id="20594" data-batch-id="843">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Students who are done with "0. FizzBuzz"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4 text-right">
+            <strong class="text-primary">
+              <span id="task-20594-score-info-score">0</span>/5
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div data-role="task20595" data-position="2" id="task-num-1">
+        <div class="panel panel-default task-card " id="task-20595">
+  <span id="user_id" data-id="9546"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      1. Print square
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="9546"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Please take a look at my implementation of printing a square in Javascript: <a href="/rltoken/lPV5IG2ZGg1phTLaGqXWlA" title="source code" target="_blank">source code</a></p>
+
+<p>Something is going wrong&hellip;.</p>
+
+<pre><code>$ ./1-print_square.js 4
+####
+####
+####
+####
+$ ./1-print_square.js 10
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+################
+$
+</code></pre>
+
+<p><code>./1-print_square.js 10</code> should print a square of size 10&hellip;</p>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-Fix_My_Code_Challenge</code></li>
+            <li>Directory: <code>challenge</code></li>
+            <li>File: <code>1-print_square.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="20595" data-batch-id="843" data-toggle="modal" data-target="#task-20595-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-20595-users-done-modal" data-task-id="20595" data-batch-id="843">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Students who are done with "1. Print square"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4 text-right">
+            <strong class="text-primary">
+              <span id="task-20595-score-info-score">0</span>/20
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div data-role="task20596" data-position="3" id="task-num-2">
+        <div class="panel panel-default task-card " id="task-20596">
+  <span id="user_id" data-id="9546"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      2. Sort
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="9546"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Please find here my implementation of sorting arguments in Ruby: <a href="/rltoken/ajP4dKdGc1c4GC8mFBr2RQ" title="source code" target="_blank">source code</a></p>
+
+<p>Something is going wrong&hellip;.</p>
+
+<pre><code>$ ruby 2-sort.rb 12 41 2 C 9 -9 31 fun -1 32
+31
+32
+12
+41
+2
+9
+-9
+-1
+$
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-Fix_My_Code_Challenge</code></li>
+            <li>Directory: <code>challenge</code></li>
+            <li>File: <code>2-sort.rb</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="20596" data-batch-id="843" data-toggle="modal" data-target="#task-20596-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-20596-users-done-modal" data-task-id="20596" data-batch-id="843">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Students who are done with "2. Sort"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4 text-right">
+            <strong class="text-primary">
+              <span id="task-20596-score-info-score">0</span>/20
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div data-role="task20597" data-position="4" id="task-num-3">
+        <div class="panel panel-default task-card " id="task-20597">
+  <span id="user_id" data-id="9546"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      3. User password
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="9546"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Please find here my implementation of a User class in Python: <a href="https://github.com/hs-hq/0x00-Fix_My_Code_Challenge/blob/main/3-user.py" title="source code" target="_blank">source code</a></p>
+
+<p>Something is going wrong&hellip;.</p>
+
+<pre><code>$ ./3-user.py
+Test User
+is_valid_password should return True if it&#39;s the right password
+$
+</code></pre>
+
+<p>My tests should not print any error&hellip;</p>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-Fix_My_Code_Challenge</code></li>
+            <li>Directory: <code>challenge</code></li>
+            <li>File: <code>3-user.py </code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="20597" data-batch-id="843" data-toggle="modal" data-target="#task-20597-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-20597-users-done-modal" data-task-id="20597" data-batch-id="843">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Students who are done with "3. User password"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4 text-right">
+            <strong class="text-primary">
+              <span id="task-20597-score-info-score">0</span>/20
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+      </div>
+      <div data-role="task20598" data-position="5" id="task-num-4">
+        <div class="panel panel-default task-card " id="task-20598">
+  <span id="user_id" data-id="9546"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      4. Double linked list
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="9546"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Please find here my implementation of a Double linked list in C: <a href="/rltoken/-Zr7inxNUNe0vnyv3SIjMg" title="source code" target="_blank">source code</a></p>
+
+<p>Something is going wrong&hellip;.</p>
+
+<pre><code>$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.c free_dlistint.c print_dlistint.c add_dnodeint_end.c delete_dnodeint_at_index.c -o delete_dnodeint
+$ ./delete_dnodeint
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+0
+402
+1024
+-----------------
+1
+2
+3
+4
+0
+402
+1024
+-----------------
+2
+3
+4
+0
+402
+1024
+-----------------
+3
+4
+0
+402
+1024
+-----------------
+4
+0
+402
+1024
+-----------------
+0
+402
+1024
+-----------------
+402
+1024
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+$
+</code></pre>
+
+<p>It doesn&rsquo;t look right&hellip; </p>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-Fix_My_Code_Challenge</code></li>
+            <li>Directory: <code>challenge</code></li>
+            <li>File: <code>4-delete_dnodeint/</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="20598" data-batch-id="843" data-toggle="modal" data-target="#task-20598-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-20598-users-done-modal" data-task-id="20598" data-batch-id="843">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Students who are done with "4. Double linked list"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4 text-right">
+            <strong class="text-primary">
+              <span id="task-20598-score-info-score">0</span>/20
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="d-flex justify-content-around">
+              <div>
+                <a data-toggle="tooltip" title="Professional Social Presence" class="btn btn-primary" role="button" href="/projects/2388">
+                  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Previous project
+</a>              </div>
+              <form action=/corrections/1131063/skip method="post">
+                <input
+                  name="authenticity_token"
+                  type="hidden"
+                  value=zTV0_XMMIjyDMoDyMsug3sCHkjqiaZOc7cucMtB8lEUYjutglguCtXRwLfRehjiAcV2yM25DtCWtSnZ-O3GZEw
+                />
+                <button class="btn btn-warning" type="submit">
+                  Next project <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                </button>
+              </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="col-sm-12 col-md-12 hidden-lg">
+        <div data-react-class="projects/ProjectReview" data-react-props="{&quot;style&quot;:&quot;line&quot;,&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/1131063/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/1131063/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;wchtBjfWx5p2mREQx6DeHKAvIdzNl0MhJaqmE_tA2lMUc_Kb0tFnE4HbvBar7UZCEfUB1QG9ZJhlK0xfEE3XBQ&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:false,&quot;message&quot;:&quot;Next project: Web infrastructure design&quot;,&quot;uri&quot;:&quot;/projects/2025&quot;},&quot;fetchURI&quot;:&quot;/projects/2217/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:true,&quot;completion&quot;:{&quot;count&quot;:0,&quot;is_completed&quot;:false,&quot;percentage&quot;:0.0},&quot;inability_to_execute_reason&quot;:null},&quot;tasks&quot;:[{&quot;id&quot;:20594,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:5,&quot;score&quot;:0}},{&quot;id&quot;:20595,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20596,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20597,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20598,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}}],&quot;summary&quot;:{&quot;completion&quot;:0.0,&quot;score&quot;:{&quot;mandatory&quot;:null,&quot;optional&quot;:null}},&quot;can_skip&quot;:true,&quot;can_start_peer_review&quot;:false},&quot;peerReview&quot;:null,&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2217,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/001_color-bb105595db22648e67fe1bf13ccc170165764f9c481034cdfd49dbb416af34af.png&quot;,&quot;name&quot;:&quot;Fix my code&quot;,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;skipURI&quot;:&quot;/corrections/1131063/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"></div>
+
+    </div>
+
+  <div class="col-xl-3 col-lg-4 hidden-xs hidden-sm hidden-md sticky-nav">
+          <div data-react-class="projects/ProjectReview" data-react-props="{&quot;style&quot;:&quot;column&quot;,&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/1131063/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/1131063/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;7GGoGyNeHQSSJWO8N2W9OiTEoht61Px6Ek26v-Gv7x452jeGxlm9jWVnzrpbKCVklR6CErb-28NSzFDzCqLiSA&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:false,&quot;message&quot;:&quot;Next project: Web infrastructure design&quot;,&quot;uri&quot;:&quot;/projects/2025&quot;},&quot;fetchURI&quot;:&quot;/projects/2217/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:true,&quot;completion&quot;:{&quot;count&quot;:0,&quot;is_completed&quot;:false,&quot;percentage&quot;:0.0},&quot;inability_to_execute_reason&quot;:null},&quot;tasks&quot;:[{&quot;id&quot;:20594,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:5,&quot;score&quot;:0}},{&quot;id&quot;:20595,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20596,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20597,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}},{&quot;id&quot;:20598,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:20,&quot;score&quot;:0}}],&quot;summary&quot;:{&quot;completion&quot;:0.0,&quot;score&quot;:{&quot;mandatory&quot;:null,&quot;optional&quot;:null}},&quot;can_skip&quot;:true,&quot;can_start_peer_review&quot;:false},&quot;peerReview&quot;:null,&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2217,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/001_color-bb105595db22648e67fe1bf13ccc170165764f9c481034cdfd49dbb416af34af.png&quot;,&quot;name&quot;:&quot;Fix my code&quot;,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;skipURI&quot;:&quot;/corrections/1131063/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"></div>
+
+
+    <div class="panel panel-default task-card " id="task-18584">
+      <span id="user_id" data-id="2303"></span>
+      <div class="panel-heading panel-heading-actions">
+        <h3 class="panel-title">
+          Tasks list
+        </h3>
+      </div>
+      <div class="panel-body task-list">
+          <ul class="nav nav-pills nav-justified" role="tablist">
+              <li class="active"><a href="#mandatory" role="tab" data-toggle="tab">Mandatory</a></li>
+              <li><a href="#advanced" role="tab" data-toggle="tab">Advanced</a></li>
+          </ul>
+          <div class="tab-content mt-4">
+            <div role="tabpanel" class="tab-pane active" id="mandatory">
+                  <div class="task-button d-flex align-center justify-content-between" role="button" data-task-index="0" id="heading-0">
+                    <div class="task-title-list">0. <code>FizzBuzz</code></div>
+                    <strong class='task_progress_score text-primary ml-2' data-task-id='20594'></strong>
+                  </div>
+                  <div class="task-button d-flex align-center justify-content-between" role="button" data-task-index="1" id="heading-1">
+                    <div class="task-title-list">1. <code>Print square</code></div>
+                    <strong class='task_progress_score text-primary ml-2' data-task-id='20595'></strong>
+                  </div>
+                  <div class="task-button d-flex align-center justify-content-between" role="button" data-task-index="2" id="heading-2">
+                    <div class="task-title-list">2. <code>Sort</code></div>
+                    <strong class='task_progress_score text-primary ml-2' data-task-id='20596'></strong>
+                  </div>
+                  <div class="task-button d-flex align-center justify-content-between" role="button" data-task-index="3" id="heading-3">
+                    <div class="task-title-list">3. <code>User password</code></div>
+                    <strong class='task_progress_score text-primary ml-2' data-task-id='20597'></strong>
+                  </div>
+                  <div class="task-button d-flex align-center justify-content-between" role="button" data-task-index="4" id="heading-4">
+                    <div class="task-title-list">4. <code>Double linked list</code></div>
+                    <strong class='task_progress_score text-primary ml-2' data-task-id='20598'></strong>
+                  </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="advanced">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="/assets/javascripts/application/custom/project_tasks.js"></script>
+
+
+        <div class="modal fade" id="container-specs-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_containers/ContainerSpecs" data-react-props="{&quot;containerModelName&quot;:&quot;Sandbox&quot;,&quot;containerSpecs&quot;:[{&quot;description&quot;:&quot;\u003cp\u003eBasic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Holberton Foundations\u003c/p\u003e\n&quot;,&quot;id&quot;:39,&quot;name&quot;:&quot;Ubuntu 20.04&quot;,&quot;online&quot;:true},{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 20.04 with NodeJS 14\u003c/p\u003e\n&quot;,&quot;id&quot;:44,&quot;name&quot;:&quot;Ubuntu 20.04 - NodeJS 14&quot;,&quot;online&quot;:true}],&quot;containersLimit&quot;:3,&quot;csrfToken&quot;:&quot;93gw3C5fhc7JSiGrjc7QqyUfjh1pXp7Q8-COQO_x4Zwiw69By1glRz4IjK3hg0j1lMWuFKV0uWmzYWQMBPzsyg&quot;,&quot;startStatusURI&quot;:&quot;/user_containers/start_status.json&quot;,&quot;startURI&quot;:&quot;/user_containers/start.json&quot;}" data-react-cache-id="user_containers/ContainerSpecs-0"></div></div></div></div></div>
+
+        <div class="modal fade" id="sandboxes-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_sandboxes/Sandboxes" data-react-props="{&quot;images&quot;:[{&quot;id&quot;:17,&quot;name&quot;:&quot;Ubuntu 22.04&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Ubuntu 22.04&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Ubuntu 22.04&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;Ubuntu 22.04&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;}],&quot;sandboxesUri&quot;:&quot;/user_sandboxes&quot;,&quot;csrfToken&quot;:&quot;rHuRZ1_baVtOR_p3EwoohSLHuXu9o0lgtcfHg_a_NMl5wA76utzJ0rkFV3F_R7Dbkx2ZcnGJbtn1Ri3PHbI5nw&quot;,&quot;maxNumberOfContainers&quot;:2}" data-react-cache-id="user_sandboxes/Sandboxes-0"></div></div></div></div></div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="d-flex justify-content-around">
+              <div>
+                <a data-toggle="tooltip" title="Professional Social Presence" class="btn btn-primary" role="button" href="/projects/2388">
+                  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Previous project
+</a>              </div>
+              <form action=/corrections/1131063/skip method="post">
+                <input
+                  name="authenticity_token"
+                  type="hidden"
+                  value=WV9k4w-3F6s9ygzDXGof_fMS3WPhxOpW7yA3YbfA7wyM5Pt-6rC3IsqIocUwJ4ejQsj9ai3uze-vod0tXM3iWg
+                />
+                <button class="btn btn-warning" type="submit">
+                  Next project <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                </button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<script src="/assets/javascripts/applications/custom/project.js"></script>
+      </article>
+    </main>
+      <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="search-bar-container">
+    <input id="search-bar"
+            type="text"
+            name="hbtn-search-bar"
+            placeholder="✨Start search by typing in this field✨">
+</div>
+
+            </div>
+            <div class="modal-body">
+                <div id="modal-spinner" class="spinner gap">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div id="search-results-container">
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="modal fade" id="markdownGuideModal" tabindex="-1" role="dialog" aria-labelledby="markdownGuideModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Markdown Guide</h4>
+        </div>
+        <div class="modal-body">
+            <h4>Emphasis</h4>
+<pre>**<strong>bold</strong>**
+*<em>italics</em>*
+~~<strike>strikethrough</strike>~~</pre>
+<h4>Headers</h4>
+<pre># Big header
+## Medium header
+### Small header
+#### Tiny header</pre>
+<h4>Lists</h4>
+<pre>* Generic list item
+* Generic list item
+* Generic list item
+
+1. Numbered list item
+2. Numbered list item
+3. Numbered list item</pre>
+<h4>Links</h4>
+<pre>[Text to display](http://www.example.com)</pre>
+<h4>Quotes</h4>
+<pre>> This is a quote.
+> It can span multiple lines!</pre>
+<h4>Images</h4>
+<p>CSS style available: <code>width, height, opacity</code></p>
+<pre>![](http://www.example.com/image.jpg)
+![](http://www.example.com/image.jpg | width: 200px)
+![](http://www.example.com/image.jpg | height: 124px | width: 80px | opacity: 0.6)
+</pre>
+<h4>Tables</h4>
+<pre>| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John     | Doe      | Male     |
+| Mary     | Smith    | Female   |
+
+<em>Or without aligning the columns...</em>
+
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John | Doe | Male |
+| Mary | Smith | Female |
+</pre>
+<h4>Displaying code</h4>
+<pre>`var example = "hello!";`
+
+<em>Or spanning multiple lines...</em>
+
+```
+var example = "hello!";
+alert(example);
+```</pre>
+        </div>
+    </div>
+  </div>
+</div>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create',
+            'UA-67152800-6',
+            'auto', {
+              userId: '9546'
+            }
+          );
+
+        ga('send', 'pageview');
+
+        $(document).ready(function() {
+          ga(function(tracker) {
+            var clientId = tracker.get('clientId');
+            $('.ga-client-id').val(clientId);
+          });
+        });
+      </script>
+
+</body>
+</html>
